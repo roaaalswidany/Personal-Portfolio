@@ -44,3 +44,23 @@ p {
   height: 24px;
   color: #0c96e2;
 }
+
+@media (prefers-color-scheme: dark) {
+  .footer_text,
+  .footer_content p {
+    color: rgba(10, 10, 10, 0.9) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer_content {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .footer_social {
+    justify-content: center;
+    margin-top: 10px;
+  }
+}

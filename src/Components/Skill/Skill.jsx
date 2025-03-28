@@ -11,14 +11,26 @@ import {
 import "./Skill.css";
 
 const Skill = () => {
+  const skills = [
+    { icon: faHtml5, color: "#E44D26" },
+    { icon: faCss3Alt, color: "#1572B6" },
+    { icon: faJs, color: "#F7DF1E" },
+    { icon: faReact, color: "#61DAFB" },
+    { icon: faGithub, color: "#181717" },
+    { icon: faFigma, color: "#F24E1E" },
+  ];
+
   return (
-    <div className="skill_icons">
-      <FontAwesomeIcon icon={faHtml5} size="3x" color="#E44D26" />
-      <FontAwesomeIcon icon={faCss3Alt} size="3x" color="#1572B6" />
-      <FontAwesomeIcon icon={faJs} size="3x" color="#F7DF1E" />
-      <FontAwesomeIcon icon={faReact} size="3x" color="#61DAFB" />
-      <FontAwesomeIcon icon={faGithub} size="3x" color="#000" />
-      <FontAwesomeIcon icon={faFigma} size="3x" color="#F24E1E" />
+    <div className="skills_grid">
+      {skills.map((skill, index) => (
+        <div
+          key={index}
+          className="skill_item"
+          style={{ "--icon-color": skill.color }}
+        >
+          <FontAwesomeIcon icon={skill.icon} className="skill_icon" beatFade />
+        </div>
+      ))}
     </div>
   );
 };

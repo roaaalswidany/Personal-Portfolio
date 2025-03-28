@@ -28,6 +28,7 @@
 .contact-content {
   display: flex;
   gap: 80px;
+  align-items: stretch;
 }
 
 .contact-info {
@@ -56,10 +57,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
+  -webkit-border-radius: ;
+  -moz-border-radius: ;
+  -ms-border-radius: ;
+  -o-border-radius: ;
 }
 
 .icon-box img {
@@ -82,10 +83,11 @@
 }
 
 .contact-form {
+  margin-top: 10px;
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 }
 
 .input-group {
@@ -105,13 +107,14 @@ textarea {
   color: #92929d;
   border-radius: 8px;
   background: transparent;
-  -webkit-border-radius: ;
-  -moz-border-radius: ;
-  -ms-border-radius: ;
-  -o-border-radius: ;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
 
 .send-btn {
+  margin-top: 15px;
   align-self: flex-start;
   padding: 15px 40px;
   background: #0c96e2;
@@ -119,10 +122,10 @@ textarea {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  -webkit-border-radius: ;
-  -moz-border-radius: ;
-  -ms-border-radius: ;
-  -o-border-radius: ;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
 
 @media (max-width: 768px) {
@@ -136,5 +139,9 @@ textarea {
 
   .info-item {
     padding: 20px;
+  }
+
+  .send-btn {
+    margin-top: 20px;
   }
 }

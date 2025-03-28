@@ -6,28 +6,28 @@ import "./Education.css";
 const educationData = [
   {
     id: 1,
-    title: "Bachelor’s in Computer Engineering",
-    institution: "International University",
+    title: "Bachelor's in Informatics Engineering",
+    institution: "International University for Science and Technology (IUST)",
     year: "2022 - Present",
+    details: "Currently in third year of studies",
   },
   {
     id: 2,
     title: "Frontend Development Training",
     institution: "Vica Web Solutions",
-    year: "2024",
+    year: "Aug 2024 - Jan 2025",
+    details: "HTML, CSS, JavaScript, React, Bootstrap, Tailwind",
   },
 ];
 
 const experienceData = [
   {
     id: 1,
-    title: "Experience Designer",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
-  {
-    id: 2,
-    title: "Frontend Developer",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "Frontend Developer Intern",
+    institution: "Vica Web Solutions",
+    year: "Aug 2024 - Jan 2025",
+    description:
+      "Developed responsive web interfaces using modern technologies including React.js, implemented UI components, and collaborated with development teams on project execution.",
   },
 ];
 
@@ -43,14 +43,15 @@ const ExperienceCard = ({ title, description }) => {
   );
 };
 
-const EducationCard = ({ title, institution, year }) => {
+const EducationCard = ({ title, institution, year, details }) => {
   return (
     <div className="education-card">
       <div className="timeline-dot"></div>
       <div>
         <h3>{title}</h3>
-        <p>{institution}</p>
-        <p>{year}</p>
+        <p className="institution">{institution}</p>
+        <p className="duration">{year}</p>
+        {details && <p className="details">{details}</p>}
       </div>
     </div>
   );
