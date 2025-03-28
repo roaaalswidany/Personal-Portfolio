@@ -1,0 +1,14 @@
+.skill_icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  width: 40%;
+}
+
+@media (max-width: 768px) {
+  .skill_icons {
+    width: 100%;
+    order: -1;
+  }
+}
