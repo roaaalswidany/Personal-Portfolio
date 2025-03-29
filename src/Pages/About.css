@@ -22,6 +22,10 @@
   background: rgba(255, 255, 255, 0.05);
   border-radius: 15px;
   backdrop-filter: blur(10px);
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }
 
 .skills-title {
@@ -121,6 +125,10 @@
   transform: rotate(15deg) scale(1.2);
   filter: drop-shadow(0 0 8px currentColor);
   -webkit-filter: drop-shadow(0 0 8px currentColor);
+  -webkit-transform: rotate(15deg) scale(1.2);
+  -moz-transform: rotate(15deg) scale(1.2);
+  -ms-transform: rotate(15deg) scale(1.2);
+  -o-transform: rotate(15deg) scale(1.2);
 }
 
 .skill-item:hover .progress-bar {

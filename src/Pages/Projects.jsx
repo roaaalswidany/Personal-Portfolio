@@ -8,17 +8,20 @@ const Projects = () => {
     <section id="projects" className="projects-section">
       <div className="container">
         <div className="projects-header">
-          <span>Portfolio</span>
-          <h2>
-            My Creative Works
-            <span className="highlight">Latest Projects</span>
-          </h2>
+          <div className="header-content">
+            <span className="section-subtitle">Portfolio</span>
+            <h2 className="section-title">
+              My Creative Works
+              <span className="highlight">Latest Projects</span>
+            </h2>
+          </div>
           <a
             target="_blank"
-            className="primaryBtn"
+            className="github-btn"
             href="https://github.com/roaaalswidany"
+            rel="noreferrer"
           >
-            <FaGithub style={{ marginRight: "8px" }} />
+            <FaGithub className="github-icon" />
             View Github
           </a>
         </div>

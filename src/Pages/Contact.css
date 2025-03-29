@@ -141,6 +141,10 @@ textarea {
     padding: 20px;
   }
 
+  input {
+    width: 140px;
+  }
+
   .send-btn {
     margin-top: 20px;
   }

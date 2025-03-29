@@ -1,29 +1,98 @@
 .projects-section {
-  padding: 80px 0;
+  padding: 5rem 0;
 }
 
-.projects-header span {
-  color: #00bfff;
-  font-size: 1.2rem;
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projects-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.header-content {
+  flex: 1;
+  text-align: left;
+}
+
+.section-subtitle {
+  display: block;
+  color: #0d6efd;
+  font-size: 1.1rem;
+  font-weight: 600;
   letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
 }
 
-.projects-header h2 {
+.section-title {
   font-size: 2.5rem;
-  margin: 20px 0;
-  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #212529;
 }
 
-.primaryBtn {
+.highlight {
+  display: block;
+  color: #0d6efd;
+  font-weight: 600;
+}
+
+.github-btn {
   display: inline-flex;
   align-items: center;
-  padding: 12px 24px;
-  font-size: 1.1rem;
-  border-radius: 30px;
-  background: linear-gradient(45deg, #00bfff, #0066ff);
-  transition: transform 0.3s;
+  padding: 0.75rem 1.5rem;
+  background-color: #0d6efd;
+  color: white;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-top: 0;
+  -webkit-border-radius: ;
+  -moz-border-radius: ;
+  -ms-border-radius: ;
+  -o-border-radius: ;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
 }
 
-.primaryBtn:hover {
+.github-btn:hover {
+  background-color: #0b5ed7;
   transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3);
+  -webkit-transform: translateY(-3px);
+  -moz-transform: translateY(-3px);
+  -ms-transform: translateY(-3px);
+  -o-transform: translateY(-3px);
+}
+
+.github-icon {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .projects-header {
+    margin-bottom: 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .github-btn {
+    margin-top: 1rem;
+    align-items: flex-start;
+  }
 }

@@ -47,6 +47,10 @@
   width: 20px;
   height: 20px;
   border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 .dot-image {
@@ -68,6 +72,10 @@
   border-radius: 10px;
   width: 320px;
   text-align: left;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 .education-card h3,
@@ -105,13 +113,7 @@
     align-items: center;
   }
 
-  .timeline {
-    width: 2px;
-    border-left: 1px dashed #4db5ff;
-  }
-
-  .timeline-dot {
-    width: 8px;
-    height: 8px;
+  .timeline-image {
+    display: none;
   }
 }

@@ -36,6 +36,7 @@
   transform: scale(1.2);
   filter: drop-shadow(0 0 15px var(--icon-color));
   animation-play-state: paused;
+  -webkit-filter: drop-shadow(0 0 15px var(--icon-color));
 }
 
 @media (max-width: 992px) {
